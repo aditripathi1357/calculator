@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/calculator_background"
+    android:padding="16dp">
+
+    <!-- Display Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/display_background"
+        android:padding="16dp"
+        android:gravity="bottom|end">
+
+        <TextView
+            android:id="@+id/tvMemory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/memory_text_color"
+            android:textSize="14sp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/display_text_color"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:maxLines="2"
+            android:ellipsize="start" />
+
+    </LinearLayout>
+
+    <!-- Memory Functions Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnMC"
+            style="@style/MemoryButtonStyle"
+            android:text="MC" />
+
+        <Button
+            android:id="@+id/btnMR"
+            style="@style/MemoryButtonStyle"
+            android:text="MR" />
+
+        <Button
+            android:id="@+id/btnMPlus"
+            style="@style/MemoryButtonStyle"
+            android:text="M+" />
+
+        <Button
+            android:id="@+id/btnMMinus"
+            style="@style/MemoryButtonStyle"
+            android:text="M-" />
+
+    </LinearLayout>
+
+    <!-- Scientific Functions Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnSqrt"
+            style="@style/FunctionButtonStyle"
+            android:text="√" />
+
+        <Button
+            android:id="@+id/btnLog"
+            style="@style/FunctionButtonStyle"
+            android:text="log" />
+
+        <Button
+            android:id="@+id/btnClearAll"
+            style="@style/FunctionButtonStyle"
+            android:text="AC" />
+
+        <Button
+            android:id="@+id/btnBackspace"
+            style="@style/FunctionButtonStyle"
+            android:text="⌫" />
+
+    </LinearLayout>
+
+    <!-- First Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/FunctionButtonStyle"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btn00"
+            style="@style/NumberButtonStyle"
+            android:text="00" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/NumberButtonStyle"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/OperatorButtonStyle"
+            android:text="÷" />
+
+    </LinearLayout>
+
+    <!-- Second Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/NumberButtonStyle"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/NumberButtonStyle"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/NumberButtonStyle"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/OperatorButtonStyle"
+            android:text="×" />
+
+    </LinearLayout>
+
+    <!-- Third Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/NumberButtonStyle"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/NumberButtonStyle"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/NumberButtonStyle"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            style="@style/OperatorButtonStyle"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <!-- Fourth Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/NumberButtonStyle"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/NumberButtonStyle"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/NumberButtonStyle"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/OperatorButtonStyle"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <!-- Fifth Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            android:background="@drawable/number_button_background"
+            android:text="0"
+            android:textColor="@color/number_text_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            android:background="@drawable/equals_button_background"
+            android:text="="
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

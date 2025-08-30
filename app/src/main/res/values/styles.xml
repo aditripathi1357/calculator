@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+
+    <!-- Calculator Button Styles -->
+    <style name="BaseButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NumberButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/number_button_background</item>
+        <item name="android:textColor">@color/number_text_color</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="OperatorButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/operator_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="FunctionButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/function_button_background</item>
+        <item name="android:textColor">@color/function_text_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MemoryButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/memory_button_background</item>
+        <item name="android:textColor">@color/memory_button_text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
